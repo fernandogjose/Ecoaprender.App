@@ -1,34 +1,20 @@
+# data
 /src/ecoaprender.app.data/bin/
 /src/ecoaprender.app.data/obj/
 
+# di
 /src/ecoaprender.app.di/bin/
 /src/ecoaprender.app.di/obj/
 
+# domain
 /src/ecoaprender.app.domain/bin/
 /src/ecoaprender.app.domain/obj/
 
+# webapi
 /src/ecoaprender.app.webapi/bin/
 /src/ecoaprender.app.webapi/obj/
 
 # ionic
-*~
-*.sw[mnpcod]
-*.log
-*.tmp
-*.tmp.*
-/src/ecoaprender.app.ionic/log.txt
-*.sublime-project
-*.sublime-workspace
-.vscode/
-/src/ecoaprender.app.ionic/npm-debug.log*
-
-/src/ecoaprender.app.ionic/.idea/
-/src/ecoaprender.app.ionic/.ionic/
-/src/ecoaprender.app.ionic/.sourcemaps/
-/src/ecoaprender.app.ionic/.sass-cache/
-/src/ecoaprender.app.ionic/.tmp/
-/src/ecoaprender.app.ionic/.versions/
-/src/ecoaprender.app.ionic/coverage/
 /src/ecoaprender.app.ionic/dist/
 /src/ecoaprender.app.ionic/node_modules/
 /src/ecoaprender.app.ionic/tmp/
@@ -38,8 +24,3 @@
 /src/ecoaprender.app.ionic/plugins/android.json
 /src/ecoaprender.app.ionic/plugins/ios.json
 /src/ecoaprender.app.ionic/www/
-$RECYCLE.BIN/
-
-.DS_Store
-/src/ecoaprender.app.ionic/Thumbs.db
-/src/ecoaprender.app.ionic/UserInterfaceState.xcuserstate
