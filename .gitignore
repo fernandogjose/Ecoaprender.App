@@ -13,14 +13,3 @@
 # webapi
 /src/ecoaprender.app.webapi/bin/
 /src/ecoaprender.app.webapi/obj/
-
-# ionic
-/src/ecoaprender.app.ionic/dist/
-/src/ecoaprender.app.ionic/node_modules/
-/src/ecoaprender.app.ionic/tmp/
-/src/ecoaprender.app.ionic/temp/
-/src/ecoaprender.app.ionic/platforms/
-/src/ecoaprender.app.ionic/plugins/
-/src/ecoaprender.app.ionic/plugins/android.json
-/src/ecoaprender.app.ionic/plugins/ios.json
-/src/ecoaprender.app.ionic/www/
