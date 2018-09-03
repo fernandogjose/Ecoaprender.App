@@ -6,11 +6,12 @@ import { UserLoginRequest } from '../dtos/userLoginRequest';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class LoginService {
 
   constructor(public http: HttpClient) { }
 
   login (userLoginRequest: UserLoginRequest) {
     return this.http.get(`${environment.baseUrlApi}/user/login/${userLoginRequest.email}/${userLoginRequest.password}`);
   }
+
 }

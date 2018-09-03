@@ -1,35 +1,36 @@
-
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserLoginRequest } from '../dtos/userLoginRequest';
 import { MenuController } from '@ionic/angular';
-import { UserService } from '../services/user.service';
 import { UserLoginResponse } from '../dtos/UserLoginResponse';
+import { LoginService } from './login.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-login',
+  templateUrl: './login.page.html',
+  styleUrls: ['./login.page.scss'],
 })
-
-export class HomePage {
+export class LoginPage implements OnInit {
 
   public userLoginRequest = new UserLoginRequest('', '');
 
   constructor(
     public menu: MenuController,
-    public userService: UserService
+    public loginService: LoginService
   ) {
     this.menu = menu;
     this.menu.enable(false);
   }
 
   public login(): void {
-    this.userService
+    this.loginService
       .login(this.userLoginRequest)
       .subscribe((userLoginResponse: UserLoginResponse) => {
 
       }, error => {
 
       });
+  }
+
+  ngOnInit() {
   }
 }
