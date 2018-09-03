@@ -1,17 +1,13 @@
 <ion-content padding>
   <h1 text-center>Escola Eco Aprender</h1>
 
-  <ion-list>
-    <ion-item>
-      <ion-label floating>e-mail</ion-label>
-      <ion-input type="text" [(ngModel)]="userLoginRequest.email"></ion-input>
-    </ion-item>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="userLoginRequest.email" placeholder="login"></ion-input>
+  </ion-item>
 
-    <ion-item>
-      <ion-label floating>senha</ion-label>
-      <ion-input type="password" [(ngModel)]="userLoginRequest.password"></ion-input>
-    </ion-item>
-  </ion-list>
+  <ion-item>
+    <ion-input type="password" [(ngModel)]="userLoginRequest.password" placeholder="senha"></ion-input>
+  </ion-item>
 
-  <button ion-button (click)="login()">Default</button>
+  <ion-button shape="round" color="primary" fill="outline" (click)="login()">entrar</ion-button>
 </ion-content>
