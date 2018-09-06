@@ -1,13 +1,34 @@
-<ion-content padding>
-  <h1 text-center>Escola Eco Aprender</h1>
+<ion-content class="content-login" padding>
 
-  <ion-item>
-    <ion-input type="text" [(ngModel)]="loginRequest.email" placeholder="login"></ion-input>
-  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="login-icon">
+        <ion-icon name="school"></ion-icon>
+      </ion-col>
+    </ion-row>
 
-  <ion-item>
-    <ion-input type="password" [(ngModel)]="loginRequest.password" placeholder="senha"></ion-input>
-  </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-input type="email" [(ngModel)]="loginRequest.email" placeholder="e-mail" class="input-textbox"></ion-input>
+      </ion-col>
+    </ion-row>
 
-  <ion-button color="primary" block (click)="login()">entrar</ion-button>
+    <ion-row>
+      <ion-col>
+        <ion-input type="password" [(ngModel)]="loginRequest.password" placeholder="senha" class="input-textbox"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="input-button" (click)="login()">
+        entrar
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col class="lost-password">
+          esqueci a minha senha
+        </ion-col>
+      </ion-row>
+  </ion-grid>
 </ion-content>

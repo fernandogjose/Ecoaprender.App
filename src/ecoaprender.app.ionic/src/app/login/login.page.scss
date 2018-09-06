@@ -1,0 +1,44 @@
+.content-login {
+    background: rgb(249,99,50);
+    background: radial-gradient(circle, rgba(249,99,50,1) 0%, rgba(250,128,87,1) 100%);
+}
+
+.login-icon {
+    color: #fff;
+    font-size: 200px;
+    text-align: center;
+}
+
+.input-textbox {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #000;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgb(255,255,255);
+}
+
+.input-button {
+    width: 100%;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-left: -1px; 
+    background-color: rgb(211, 62, 17);
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.lost-password {
+    text-align: right;
+    font-size: small;
+    color: #fff;
+}
