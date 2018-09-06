@@ -1,6 +1,6 @@
-import { Student } from "./student";
+import { Student } from "../student/student.dto";
 
-export class UserLoginResponse {
+export class LoginResponse {
     constructor(
         public id: number, 
         public schoolId: number,

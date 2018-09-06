@@ -1,15 +1,3 @@
-// http://ionicframework.com/docs/theming/
-@import "~@ionic/angular/css/core.css";
-@import "~@ionic/angular/css/normalize.css";
-@import "~@ionic/angular/css/structure.css";
-@import "~@ionic/angular/css/typography.css";
-
-@import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
-@import "~@ionic/angular/css/text-alignment.css";
-@import "~@ionic/angular/css/text-transformation.css";
-@import "~@ionic/angular/css/flex-utils.css";
-
 // Menu user profile
 .user-profile {
     
@@ -26,10 +14,9 @@
     }
 
     .toolbar-background {
-    //   background-image: linear-gradient(135deg, color(--ion-color-primary, dark), color(--ion-color-primary, primary)) !important;
-      background-color: red;
+        background-image: linear-gradient(135deg, color($colors, dark), color($colors, primary)) !important;
     }
-
+    
     .username {
         font-size: medium;
         color: var(--ion-color-primary, #000);

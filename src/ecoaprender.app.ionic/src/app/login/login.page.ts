@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UserLoginRequest } from '../dtos/userLoginRequest';
-import { MenuController } from '@ionic/angular';
-import { UserLoginResponse } from '../dtos/UserLoginResponse';
+import { LoginRequest } from './loginRequest.dto';
+import { MenuController, NavController } from '@ionic/angular';
+import { LoginResponse } from './loginResponse.dto';
 import { LoginService } from './login.service';
 
 @Component({
@@ -11,24 +11,26 @@ import { LoginService } from './login.service';
 })
 export class LoginPage implements OnInit {
 
-  public userLoginRequest = new UserLoginRequest('', '');
+  public loginRequest = new LoginRequest('', '');
 
   constructor(
-    public menu: MenuController,
-    public loginService: LoginService
+    public menuController: MenuController,
+    public loginService: LoginService,
+    private navController: NavController
   ) {
-    this.menu = menu;
-    this.menu.enable(false);
+    this.menuController.enable(false);
   }
 
   public login(): void {
-    this.loginService
-      .login(this.userLoginRequest)
-      .subscribe((userLoginResponse: UserLoginResponse) => {
+    this.navController.navigateForward('/home')
 
-      }, error => {
+    // this.loginService
+    //   .login(this.loginRequest)
+    //   .subscribe((loginResponse: LoginResponse) => {
 
-      });
+    //   }, error => {
+
+    //   });
   }
 
   ngOnInit() {

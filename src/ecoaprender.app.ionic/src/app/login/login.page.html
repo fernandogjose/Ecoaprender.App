@@ -2,12 +2,12 @@
   <h1 text-center>Escola Eco Aprender</h1>
 
   <ion-item>
-    <ion-input type="text" [(ngModel)]="userLoginRequest.email" placeholder="login"></ion-input>
+    <ion-input type="text" [(ngModel)]="loginRequest.email" placeholder="login"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input type="password" [(ngModel)]="userLoginRequest.password" placeholder="senha"></ion-input>
+    <ion-input type="password" [(ngModel)]="loginRequest.password" placeholder="senha"></ion-input>
   </ion-item>
 
-  <ion-button color="primary" fill="outline" (click)="login()">entrar</ion-button>
+  <ion-button color="primary" block (click)="login()">entrar</ion-button>
 </ion-content>
